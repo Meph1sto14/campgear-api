@@ -118,7 +118,7 @@ router.use(protect, restrictTo('admin'));
  *         application/json:
  *           schema:
  *             type: object
- *             required: [name, price, category]
+ *             required: [name, price, stock, category]
  *             properties:
  *               name:
  *                 type: string
@@ -126,6 +126,9 @@ router.use(protect, restrictTo('admin'));
  *               price:
  *                 type: number
  *                 example: 850000
+ *               stock:
+ *                 type: number
+ *                 example: 20
  *               category:
  *                 type: string
  *                 example: 64f1a2b3c4d5e6f7a8b9c0d1
